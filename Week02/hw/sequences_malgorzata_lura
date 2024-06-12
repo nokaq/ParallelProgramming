@@ -1,0 +1,22 @@
+my_list = [2, 1, 2, 3, 7, 2, 2]
+my_tuple = (2, 1, 3, 7)
+my_set = {2, 1, 3, 7}
+my_dict = {1: 1, 2: 2, 3: 3}
+
+def remove_duplicates(my_list):
+    return list(set(my_list))
+
+def list_counts(my_list):
+    new = {} 
+    for x in my_list:
+        if x in new:
+            new[x] += 1
+        else:
+            new[x] = 1  
+    return(new)
+
+def reverse_dictionary(my_dict):
+    revers = {}
+    for key, value in my_dict.items():
+        revers[value] = key
+    return(revers)
